@@ -21,5 +21,6 @@ public static void main(String[] args) {
 	//list.stream().filter(s->s.contains("Predicate")).forEach(System.out::println);
 	System.out.println();
 	//list.stream().filter(s->s.contains("Supplier")).forEach(System.out::println);
+	//list.stream().filter(s->s.contains("Supplier")).forEach(System.out::println);
 }
 }
