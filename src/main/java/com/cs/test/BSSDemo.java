@@ -1,6 +1,6 @@
 package com.cs.test;
 
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -40,7 +40,8 @@ public class BSSDemo {
 			map.get(categoryId).add(goodsId);
 		}
 		for (Map.Entry<String, Set<String>> entry : map.entrySet()) {
-			System.out.println(String.format("update goods_info gi set gi.category_id=%s, gi.update_time=gi.update_time where gi.id in (%s);", entry.getKey(), StringUtils.join(entry.getValue(), ",")));
+			System.out.println(String.format("update goods_info gi set gi.category_id=%s, gi.update_time=gi.update_time where gi.id in (%s);", entry.getKey(), StringUtils
+					.join(entry.getValue(), ",")));
 		}
 		
 	}
